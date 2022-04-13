@@ -59,7 +59,6 @@ getColors()
 const searchInput = document.getElementById("search");
 
 searchInput.addEventListener("input", e => {
-    
     var numOfLayout = document.querySelectorAll(".layout").length;
     
     for (i=0; i<numOfLayout; i++){
