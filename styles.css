@@ -21,7 +21,12 @@ body{
     width: 15rem;
     height: 15rem;
 }
-#searchBar{
+.search-wrapper{
+    display: inline;
+}
+
+#search{
+    width: 80%;
     padding: 0.7rem;
     border: black solid;
     border-radius: 1rem;
