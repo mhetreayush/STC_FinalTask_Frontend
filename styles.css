@@ -1,0 +1,28 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.content{
+    margin-left: 15%;
+}
+.layout{
+    display: inline-block;
+    border: black solid;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+.layout img{
+    border-radius: 0.3rem;
+    border: black solid;
+    width: 15rem;
+    height: 15rem;
+}
+#searchBar{
+    padding: 0.7rem;
+    border: black solid;
+    border-radius: 1rem;
+}
