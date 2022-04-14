@@ -77,7 +77,7 @@ searchInput.addEventListener("input", e => {
     }
     console.log(decisions)
     if (decisions.includes(true)==false){
-        var result = "No item named " + value
+        var result = 'No item named "' + value +'".'
         console.log(result)
         document.getElementById("notFound").innerHTML= result;
     }
