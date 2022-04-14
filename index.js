@@ -69,8 +69,8 @@ searchInput.addEventListener("input", e => {
     if(check.toLocaleLowerCase().includes(value.toLocaleLowerCase())==false){
         document.querySelectorAll(".layout")[i].style.display="none"
     }
-    else if(value == ""){
-        window.location.reload();
+    else{
+        document.querySelectorAll(".layout")[i].style.display="inline-block"
     }
     }
 })
