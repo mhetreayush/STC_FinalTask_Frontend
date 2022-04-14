@@ -75,10 +75,8 @@ searchInput.addEventListener("input", e => {
         document.getElementById("fruitsOuter").style.display="none";
     }
     }
-    console.log(decisions)
     if (decisions.includes(true)==false){
         var result = 'No item named "' + value +'".'
-        console.log(result)
         document.getElementById("notFound").innerHTML= result;
     }
     else{
