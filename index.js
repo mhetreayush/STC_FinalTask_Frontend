@@ -60,14 +60,13 @@ const searchInput = document.getElementById("search");
 
 searchInput.addEventListener("input", e => {
     var numOfLayout = document.querySelectorAll(".layout").length;
-    
+    const decisions=[];
     for (i=0; i<numOfLayout; i++){
-        const value = e.target.value;
+        var value = e.target.value;
         document.getElementById("fruitsDiv").innerHTML=value;
         document.getElementById("fruitsOuter").style.display="block";
         var check = document.querySelectorAll(".layout")[i].querySelector("h1").innerHTML;
-    console.log(i)
-    console.log(check.toLocaleLowerCase().includes(value.toLocaleLowerCase()))
+    decisions.push(Boolean(check.toLocaleLowerCase().includes(value.toLocaleLowerCase())));
     if(check.toLocaleLowerCase().includes(value.toLocaleLowerCase())==false){
         document.querySelectorAll(".layout")[i].style.display="none"
     }
@@ -75,5 +74,14 @@ searchInput.addEventListener("input", e => {
         document.querySelectorAll(".layout")[i].style.display="inline-block"
         document.getElementById("fruitsOuter").style.display="none";
     }
+    }
+    console.log(decisions)
+    if (decisions.includes(true)==false){
+        var result = "No item named " + value
+        console.log(result)
+        document.getElementById("notFound").innerHTML= result;
+    }
+    else{
+        document.getElementById("notFound").innerHTML="";
     }
 })
