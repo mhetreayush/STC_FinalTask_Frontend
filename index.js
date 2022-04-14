@@ -4,8 +4,8 @@ function createProd(img, name) {
     let code = `
     <div class="layout">
             <img src="${img}" alt="">
-            <h1 style="font-family: 'Bebas Neue', cursive;">${name}</h1>
-            <h6>Description</h6>
+            <h1 class="pt-1 m-0" style="font-family: 'Bebas Neue', cursive;">${name}</h1>
+            <h6 class="p-0 m-0">Description</h6>
     </div>
     `;
     products.innerHTML += code;
