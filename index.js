@@ -63,6 +63,8 @@ searchInput.addEventListener("input", e => {
     
     for (i=0; i<numOfLayout; i++){
         const value = e.target.value;
+        document.getElementById("fruitsDiv").innerHTML=value;
+        document.getElementById("fruitsOuter").style.display="block";
         var check = document.querySelectorAll(".layout")[i].querySelector("h1").innerHTML;
     console.log(i)
     console.log(check.toLocaleLowerCase().includes(value.toLocaleLowerCase()))
@@ -71,6 +73,7 @@ searchInput.addEventListener("input", e => {
     }
     else{
         document.querySelectorAll(".layout")[i].style.display="inline-block"
+        document.getElementById("fruitsOuter").style.display="none";
     }
     }
 })
