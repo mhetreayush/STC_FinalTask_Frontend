@@ -38,8 +38,8 @@ function getColors() {
     }).then((data => {
         let bgcol = data.hex;
         document.body.style.backgroundColor = `${bgcol}`;
+        document.querySelector("#navb").style.backgroundColor= bgcol;
         document.querySelector("title").innerHTML = "BG-Color : " + `${bgcol}`;
-
     }))
     fetch(url).then((response) => {
         return response.json();

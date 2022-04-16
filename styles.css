@@ -5,7 +5,7 @@ body{
 }
 
 .content{
-    margin-left: 15%;
+    margin-left: 7%;
 }
 .layout{
     display: inline-block;
@@ -18,15 +18,15 @@ body{
 .layout img{
     border-radius: 0.3rem;
     border: black solid;
-    width: 15rem;
-    height: 15rem;
+    width: 29vh;
+    height: 29vh;
 }
 .search-wrapper{
     display: inline;
 }
 
 #search{
-    width: 80%;
+    width: 60%;
     padding: 0.7rem;
     border: black solid;
     border-radius: 1rem;
@@ -42,3 +42,21 @@ body{
 #fruitsOuter{
     display: none;
 }
+
+#pseudoNavb{
+    opacity: 0;
+    margin-bottom: 1rem;
+}
+
+#navb{
+    position: fixed;
+    display: inline-block;
+    top:0;
+    width:120%;
+    height: 15%;
+    padding: 4vh 0;
+    padding-left: 15vw;
+    padding-right: 3vw;
+    box-shadow: 0.5vh 0.5vh 0.5vh;
+}
+

@@ -22,11 +22,21 @@
 
 <body>
 
-    <div class="row ms-5 me-5 mt-2">
+    <div class="row" id="navb">
         <div class="col-lg-1">
         </div>
         <div class="col-lg-11">
-            <img src="logo.png" alt="" style="width: 3rem;">
+            <img id="logo" src="logo.png" alt="" style="width: 3rem;">
+            <div class="search-wrapper">
+                <input type="search" id="search" placeholder="Search">
+            </div>
+        </div>
+    </div>
+    <div class="row ms-5 me-5 mt-2" id="pseudoNavb">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-11">
+            <img id="logo" src="logo.png" alt="" style="width: 3rem;">
             <div class="search-wrapper">
                 <input type="search" id="search" placeholder="Search">
             </div>
@@ -38,7 +48,7 @@
             <span id="notFound"></span> </h5>
     </div>
     <div class="content">
-        <div class="placeHolder me-5 pe-5"></div>
+        <div class="placeHolder me-5 pe-5 pt-5"></div>
     </div>
 
     <script src="index.js"></script>
