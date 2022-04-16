@@ -83,3 +83,11 @@ searchInput.addEventListener("input", e => {
         document.getElementById("notFound").innerHTML="";
     }
 })
+
+window.onscroll = ()=>{
+    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        document.getElementById("scrollTop").style.display="block"
+      } else {
+        document.getElementById("scrollTop").style.display="none"
+      }
+}
