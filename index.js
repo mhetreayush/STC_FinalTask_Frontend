@@ -25,7 +25,7 @@ let item3 = {
     img: "https://images.immediate.co.uk/production/volatile/sites/30/2017/01/Bananas-218094b-scaled.jpg",
     name: "Banana"
 };
-for (i = 0; i < 10; i++) {
+for (i = 0; i < 15; i++) {
     createProd(item1.img, item1.name);
     createProd(item2.img, item2.name);
     createProd(item3.img, item3.name);
