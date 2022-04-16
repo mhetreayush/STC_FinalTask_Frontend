@@ -58,6 +58,9 @@ getColors()
 
 const searchInput = document.getElementById("search");
 
+searchInput.addEventListener("click", ()=>{
+    window.scrollTo(0, 0)
+})
 searchInput.addEventListener("input", e => {
     var numOfLayout = document.querySelectorAll(".layout").length;
     const decisions=[];
