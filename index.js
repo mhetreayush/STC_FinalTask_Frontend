@@ -50,8 +50,6 @@ function getColors() {
             document.querySelectorAll(".layout")[i].style.backgroundColor = layoutCol;
         }
     }))
-
-    setTimeout(getColors, 1500);
 }
 
 getColors()
