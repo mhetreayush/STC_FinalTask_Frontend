@@ -1,3 +1,16 @@
+if ("serviceWorker" in navigator){
+navigator.serviceWorker.register("sw.js").then(registration =>{
+    console.log("Registered!");
+    console.log(registration);
+}).catch(error =>{
+    window.alert("SW registration failed! :(");
+    console.log(error);
+})
+}
+else{
+    window.alert("Application Not Supported! :(");
+}
+
 const products = document.querySelector(".placeHolder");
 
 function createProd(img, name) {
